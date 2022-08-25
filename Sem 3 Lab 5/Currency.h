@@ -3,42 +3,41 @@
 
 using namespace std;
 
-class Currency
-{
-public:
-	virtual void Convert() = 0;
-	virtual double GetBack() = 0;
-	virtual void Print() = 0;
+class Currency {
+ public:
+  virtual void Convert() = 0;
+  virtual double GetBack() = 0;
+  virtual void Print() = 0;
 };
 
 class Dollar : public Currency {
-private:
-	double value;
+ private:
+  double value;
 
-public:
-	Dollar();
-	
-	Dollar(double);
+ public:
+  Dollar();
 
-	void Convert();
+  Dollar(double);
 
-	double GetBack();
+  void Convert();
 
-	void Print();
+  double GetBack();
+
+  void Print();
 };
 
 class Euro : public Currency {
-private:
-	double value;
+ private:
+  double value;
 
-public:
-	Euro();
+ public:
+  Euro();
 
-	Euro(double);
+  Euro(double);
 
-	void Convert();
+  void Convert();
 
-	double GetBack();
+  double GetBack();
 
-	void Print();
+  void Print();
 };

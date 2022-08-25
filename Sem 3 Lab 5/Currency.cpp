@@ -1,43 +1,25 @@
 #include "Currency.h"
 
-Dollar::Dollar() {
-	value = 0;
-}
+Dollar::Dollar() { value = 0; }
 
-Dollar::Dollar(double _value) {
-	value = _value;
-}
+Dollar::Dollar(double _value) { value = _value; }
 
 void Dollar::Convert() {
-	value /= 0.013655; //Õ‡ 29.12.2021 3:09
+  value /= 0.013655;  //–ù–∞ 29.12.2021 3:09
 }
 
-double Dollar::GetBack() {
-	return value;
-}
+double Dollar::GetBack() { return value; }
 
-void Dollar::Print() {
-	cout << value;
-}
+void Dollar::Print() { cout << value; }
 
+Euro::Euro() { value = 0; }
 
-
-Euro::Euro() {
-	value = 0;
-}
-
-Euro::Euro(double _value) {
-	value = _value;
-}
+Euro::Euro(double _value) { value = _value; }
 
 void Euro::Convert() {
-	value /= 0.012057; //Õ‡ 29.12.2021 3:09
+  value /= 0.012057;  //–ù–∞ 29.12.2021 3:09
 }
 
-double Euro::GetBack() {
-	return value;
-}
+double Euro::GetBack() { return value; }
 
-void Euro::Print() {
-	cout << value;
-}
+void Euro::Print() { cout << value; }
